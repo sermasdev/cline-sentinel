@@ -9,6 +9,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6.svg)](https://www.typescriptlang.org)
 [![Docker](https://img.shields.io/badge/Docker-PostgreSQL_16-2496ED.svg)](https://docker.com)
 [![Cline](https://img.shields.io/badge/Runtime_AI-Cline_CLI-brightgreen.svg)](https://github.com/cline/cline)
+[![Pitch Deck PDF](https://img.shields.io/badge/YC_Pitch_Deck-PDF_Download-ff0055.svg)](docs/cline-sentinel-pitch.pdf)
 
 ---
 
