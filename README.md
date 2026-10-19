@@ -18,7 +18,7 @@
 **Cline Sentinel** is an autonomous security monitoring, decoy, and threat correlation system. It captures, correlates, and analyzes cyber attacks across simulated SSH and synthetic Web/API/MCP decoys, scoring adversary activity across **Attack Risk**, **Automation Likelihood**, and **AI-Agent Likelihood** dimensions.
 
 ### Core Capabilities:
-- **Futuristic SOC Operations Dashboard (Port 3000):** Dark-mode animated cyberpunk HUD featuring live Server-Sent Events (SSE) telemetry, an interactive SVG radar sweep, an interactive CRT keystroke terminal player, an incident triage matrix, and a 1-click test-range attack simulator.
+- **SOC Operations Dashboard (Port 3000):** Dark-mode animated cyberpunk HUD featuring live Server-Sent Events (SSE) telemetry, an interactive SVG radar sweep, an interactive CRT keystroke terminal player, an incident triage matrix, and a 1-click test-range attack simulator.
 - **Cowrie SSH Honeypot (Port 2222):** Simulates an OpenSSH server, trapping brute-force attempts and providing an isolated virtual shell that captures commands without executing attacker payloads on the host.
 - **Synthetic Web & MCP Agent Decoy (Port 8088):** Deceives scanners and automated AI agents by exposing fake administrative consoles (`/admin`, `/login`), REST API credentials (`/api/v1/auth`), and Model Context Protocol endpoints (`/.well-known/agent.json`, `/mcp`, `/agent/tools`, `/agent/execute`).
 - **Autonomous Incident Investigation via Cline:** Submits sanitized, prompt-injection-resistant incident telemetry to the local Cline CLI in headless plan mode (`cline -p -P openrouter -m google/gemini-3.8-flash`), generating executive summaries, threat reasoning, and defensive recommendations without granting Cline host bash permissions.
