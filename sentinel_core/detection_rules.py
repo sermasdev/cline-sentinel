@@ -94,6 +94,19 @@ class DetectionEngine:
                 "requires_human_approval": False
             }
 
+        # 5. Perimeter Reconnaissance (Low Risk)
+        if sensor_type == "web" and any(p in payload for p in ["robots.txt", "sitemap.xml", "favicon"]):
+            return {
+                "classification": "perimeter_reconnaissance",
+                "title": f"Perimeter Crawler Discovery from {source_ip}",
+                "description": f"Automated crawler inspected public resource index: {payload}",
+                "severity": "low",
+                "attack_risk": 0.20,
+                "automation_likelihood": 0.85,
+                "ai_agent_likelihood": 0.10,
+                "requires_human_approval": False
+            }
+
         # 5. Credential Stuffing
         if "login" in payload and (event_type in ["authentication_failed", "credential_access"]):
             return {

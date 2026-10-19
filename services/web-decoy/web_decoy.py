@@ -50,6 +50,11 @@ async def root(request: Request):
     record_decoy_hit(request, "web_request", "informational", "GET /")
     return HTMLResponse("<html><head><title>Internal Portal</title></head><body><h1>Welcome to Enterprise Security Gateway</h1></body></html>")
 
+@app.get("/robots.txt")
+async def robots_txt(request: Request):
+    record_decoy_hit(request, "web_request", "low", "GET /robots.txt")
+    return Response("User-agent: *\nDisallow: /admin\nDisallow: /api/v1/auth\nDisallow: /mcp\n", media_type="text/plain")
+
 @app.get("/admin")
 @app.post("/admin")
 async def admin(request: Request):
