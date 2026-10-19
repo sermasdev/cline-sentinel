@@ -83,7 +83,7 @@
 
 ## 3. Platform Visual Showcase
 
-### 1. Futuristic SOC Command Center & Functional 360° Real-Time Radar
+### 1. Interactive SOC Command Center & Functional 360° Real-Time Radar
 The central operations HUD displays live telemetry ingestion velocity, active threat metrics, and a dynamic 360° radar screen plotting live incidents with clickable lock-on targets.
 
 ![SOC Command Center](docs/assets/screenshot-overview.png)
