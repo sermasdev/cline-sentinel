@@ -21,7 +21,7 @@ html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Cline Sentinel — YC Pitch Presentation</title>
+<title>Cline Sentinel — Pitch Presentation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -369,7 +369,7 @@ html_content = f"""<!DOCTYPE html>
         </div>
       </div>
       <div style="display: flex; gap: 14px; align-items: center;">
-        <div class="badge">YC PITCH // DECK 2026</div>
+        <div class="badge">PITCH PRESENTATION // 2026</div>
         <div class="slide-num">01 / 03</div>
       </div>
     </div>
@@ -426,7 +426,7 @@ html_content = f"""<!DOCTYPE html>
     </div>
 
     <div class="footer">
-      <div>CONFIDENTIAL // Y COMBINATOR APPLICATION</div>
+      <div>CONFIDENTIAL // PITCH PRESENTATION</div>
       <div>GITHUB: <span class="footer-link">https://github.com/sermasdev/cline-sentinel</span></div>
     </div>
   </div>
