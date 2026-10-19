@@ -81,7 +81,36 @@
 
 ---
 
-## 3. System Requirements
+## 3. Platform Visual Showcase
+
+### 1. Futuristic SOC Command Center & Functional 360° Real-Time Radar
+The central operations HUD displays live telemetry ingestion velocity, active threat metrics, and a dynamic 360° radar screen plotting live incidents with clickable lock-on targets.
+
+![SOC Command Center](docs/assets/screenshot-overview.png)
+
+### 2. Telemetry Inspector with Autonomous Cline Agent Analysis
+Clicking any security event opens the Telemetry Inspector. Triggering **"CLINE AGENT ANALYSIS"** dispatches an unattended forensic investigation in a safe plan-mode sandbox (`-p`), providing threat classification, attacker intent, and ready-to-execute one-click remediation firewall commands.
+
+![Cline Agent Analysis](docs/assets/screenshot-analysis.png)
+
+### 3. Interactive CRT Phosphor Keystroke Terminal Session Replay
+Forensically reconstruct captured attacker sessions step-by-step. The interactive CRT terminal emulator replays attacker keystrokes and virtual shell command outputs with 1x, 2x, and 5x speed scrubbing.
+
+![CRT Keystroke Session Replay](docs/assets/screenshot-replay.png)
+
+### 4. 1-Click Multi-Surface Attack Simulation Matrix
+Simulate adversary campaigns across SSH port 2222 brute-force spraying, web administrative path leaks, autonomous AI agent discovery probes, and critical command injection vectors.
+
+![Attack Simulation Matrix](docs/assets/screenshot-simulator.png)
+
+### 5. Synthetic Decoys & MCP Agent Sensors Catalog
+Deploy deceptive decoy endpoints mimicking production administrative gateways (`/admin`, `/login`), REST API authentication (`/api/v1/auth`), and Model Context Protocol (MCP) schemas (`/.well-known/agent.json`, `/mcp`, `/agent/tools`) to safely isolate and observe adversary bots.
+
+![Decoy Sensors Catalog](docs/assets/screenshot-sensors.png)
+
+---
+
+## 4. System Requirements
 
 ### Hardware:
 - **Architecture:** x86_64 or arm64 (Apple Silicon, OrbStack, AWS Graviton)
@@ -98,7 +127,7 @@
 
 ---
 
-## 4. Step-by-Step Installation Instructions
+## 5. Step-by-Step Installation Instructions
 
 ### Step 1: Clone the Repository
 ```bash
@@ -155,7 +184,7 @@ python3 -c "import sys; sys.path.insert(0, '.'); from sentinel_core.db import in
 
 ---
 
-## 5. Running the Application
+## 6. Running the Application
 
 You can start the entire multi-service stack with a single command using the built-in supervisor:
 
@@ -174,7 +203,7 @@ All logs are written to `runtime/logs/`.
 
 ---
 
-## 6. Accessing the Platform
+## 7. Accessing the Platform
 
 | Interface | URL | Purpose |
 |---|---|---|
@@ -188,7 +217,7 @@ All logs are written to `runtime/logs/`.
 
 ---
 
-## 7. Interactive Features & Verification
+## 8. Interactive Features & Verification
 
 ### 1-Click Attack Simulation Matrix
 In the dashboard header, click **ATTACK SIMULATOR** to trigger test-range scenarios:
@@ -215,7 +244,7 @@ In the dashboard header, click **ATTACK SIMULATOR** to trigger test-range scenar
 
 ---
 
-## 8. Security Controls & Guardrails
+## 9. Security Controls & Guardrails
 
 - **Zero Host Command Execution:** The SSH honeypot runs an in-memory virtual emulator; shell commands do not touch the underlying host.
 - **Cline Plan-Mode Sandbox:** The Cline runtime adapter executes exclusively with `-p` (plan mode), disallowing tool execution, shell commands, or file system writes.
@@ -225,7 +254,7 @@ In the dashboard header, click **ATTACK SIMULATOR** to trigger test-range scenar
 
 ---
 
-## 9. API Reference Summary
+## 10. API Reference Summary
 
 - `GET /health` — Service readiness probe
 - `GET /api/v1/summary` — SOC HUD telemetry statistics
@@ -244,6 +273,6 @@ In the dashboard header, click **ATTACK SIMULATOR** to trigger test-range scenar
 
 ---
 
-## 10. License
+## 11. License
 
 MIT License. Designed and built with autonomous AI architecture.
